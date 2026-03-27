@@ -1,0 +1,17 @@
+?- recommend(программист, начальный, Material, Link).
+% Ответ:
+% Материал = 'Введение в Python',
+% Ссылка = 'https://stepik.org/course/512'
+
+?- recommend(аналитик_данных, Level, Material, Link).
+% Выводит по одному для каждого уровня:
+% Уровень = начальный, Материал = 'Основы работы с Excel и Pandas', ...
+% Уровень = средний, ...
+% Уровень = продвинутый, ...
+
+?- recommend(devops_инженер, средний, Material, Link).
+% Material = 'Docker и CI/CD',
+% Link = 'https://docs.docker.com/get-started/'
+
+?- recommend(дизайнер_UI, Level, Material, Link).
+% Выводит 3 варианта — по каждому уровню.
